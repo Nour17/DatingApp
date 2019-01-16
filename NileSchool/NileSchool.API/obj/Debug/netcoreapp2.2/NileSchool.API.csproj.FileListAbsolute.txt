@@ -1,0 +1,14 @@
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/bin/Debug/netcoreapp2.2/NileSchool.API.deps.json
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/bin/Debug/netcoreapp2.2/NileSchool.API.runtimeconfig.json
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/bin/Debug/netcoreapp2.2/NileSchool.API.runtimeconfig.dev.json
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/bin/Debug/netcoreapp2.2/NileSchool.API.dll
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/bin/Debug/netcoreapp2.2/NileSchool.API.pdb
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/obj/Debug/netcoreapp2.2/NileSchool.API.csprojAssemblyReference.cache
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/obj/Debug/netcoreapp2.2/NileSchool.API.csproj.CoreCompileInputs.cache
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/obj/Debug/netcoreapp2.2/NileSchool.API.RazorAssemblyInfo.cache
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/obj/Debug/netcoreapp2.2/NileSchool.API.RazorAssemblyInfo.cs
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/obj/Debug/netcoreapp2.2/NileSchool.API.AssemblyInfoInputs.cache
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/obj/Debug/netcoreapp2.2/NileSchool.API.AssemblyInfo.cs
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/obj/Debug/netcoreapp2.2/NileSchool.API.RazorTargetAssemblyInfo.cache
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/obj/Debug/netcoreapp2.2/NileSchool.API.dll
+/home/nour/Documents/ASP projects/NileSchool/NileSchool.API/obj/Debug/netcoreapp2.2/NileSchool.API.pdb

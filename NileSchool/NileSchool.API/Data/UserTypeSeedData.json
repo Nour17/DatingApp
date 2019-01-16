@@ -1,0 +1,34 @@
+[
+    {
+        "UserTypeOrder": "1",
+        "Position": "Head Of Center"
+    },
+    {
+        "UserTypeOrder": "2",
+        "Position": "Senior Admin"
+    },
+    {
+        "UserTypeOrder": "3",
+        "Position": "Exam Officer"
+    },
+    {
+        "UserTypeOrder": "4",
+        "Position": "Assistant Principle"
+    },
+    {
+        "UserTypeOrder": "5",
+        "Position": "Head Of Department"
+    },
+    {
+        "UserTypeOrder": "6",
+        "Position": "Teacher"
+    },
+    {
+        "UserTypeOrder": "7",
+        "Position": "Student Affairs"
+    },
+    {
+        "UserTypeOrder": "8",
+        "Position": "Human Resources"
+    }
+]
