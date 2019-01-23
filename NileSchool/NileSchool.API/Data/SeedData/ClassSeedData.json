@@ -1,0 +1,92 @@
+[
+    {
+        "Name": "A",
+        "GradeId": 1,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "B",
+        "GradeId": 1,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "A",
+        "GradeId": 2,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "B",
+        "GradeId": 2,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "A",
+        "GradeId": 3,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "B",
+        "GradeId": 3,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "A",
+        "GradeId": 4,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "B",
+        "GradeId": 4,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "A",
+        "GradeId": 5,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "B",
+        "GradeId": 5,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "A",
+        "GradeId": 6,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "B",
+        "GradeId": 6,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "A",
+        "GradeId": 7,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "B",
+        "GradeId": 7,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "A",
+        "GradeId": 8,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "B",
+        "GradeId": 8,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "A",
+        "GradeId": 9,
+        "ClassCapacity": 20
+    },
+    {
+        "Name": "B",
+        "GradeId": 9,
+        "ClassCapacity": 20
+    } 
+]

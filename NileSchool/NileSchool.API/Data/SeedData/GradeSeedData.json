@@ -1,0 +1,38 @@
+[
+    {
+	    "Name": "First Grade",
+	    "AssistantPrincipalId": 1
+    },
+    {
+        "Name": "Second Grade",
+        "AssistantPrincipalId": 1
+    },
+    {
+        "Name": "Third Grade",
+        "AssistantPrincipalId": 1
+    },
+    {
+        "Name": "Fourth Grade",
+        "AssistantPrincipalId": 2
+    },
+    {
+        "Name": "Fifth Grade",
+        "AssistantPrincipalId": 2
+    },
+    {
+        "Name": "Sixth Grade",
+        "AssistantPrincipalId": 2
+    },
+    {
+        "Name": "Seventh Grade",
+        "AssistantPrincipalId": 3
+    },
+    {
+        "Name": "Eigth Grade",
+        "AssistantPrincipalId": 3
+    },
+    {
+        "Name": "Ninth Grade",
+        "AssistantPrincipalId": 3
+    }
+]

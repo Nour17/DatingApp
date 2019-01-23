@@ -1,0 +1,114 @@
+[
+    {
+        "Name": "Head Of Center",
+        "Username": "hoc",
+        "Email": "HeadOfCenter@gmail.com",
+        "SSN": "29709120102281",
+        "Password": "password",
+        "UserTypeId": 1
+    },
+    {
+        "Name": "Senior Admin",
+        "Username": "sa",
+        "Email": "SeniorAdmin@gmail.com",
+        "SSN": "29709120102282",
+        "Password": "password",
+        "UserTypeId": 2
+    },
+    {
+        "Name": "Exam Officer",
+        "Username": "eo",
+        "Email": "ExamOfficer@gmail.com",
+        "SSN": "29709120102283",
+        "Password": "password",
+        "UserTypeId": 3
+    },
+    {
+        "Name": "AssistantPrincipal One",
+        "Username": "ap1",
+        "Email": "AssistantPrincipalOne@gmail.com",
+        "SSN": "29709121102284",
+        "Password": "password",
+        "UserTypeId": 4
+    },
+    {
+        "Name": "AssistantPrincipal",
+        "Username": "ap2",
+        "Email": "AssistantPrincipalTwo@gmail.com",
+        "SSN": "29709122102284",
+        "Password": "password",
+        "UserTypeId": 4
+    },
+    {
+        "Name": "AssistantPrincipal",
+        "Username": "ap3",
+        "Email": "AssistantPrincipalThree@gmail.com",
+        "SSN": "29709123102284",
+        "Password": "password",
+        "UserTypeId": 4
+    },
+    {
+        "Name": "Head Of Department",
+        "Username": "hod",
+        "Email": "HeadOfDepartment@gmail.com",
+        "SSN": "29709120102285",
+        "Password": "password",
+        "UserTypeId": 5
+    },
+    {
+        "Name": "Teacher One",
+        "Username": "t1",
+        "Email": "TeacherOne@gmail.com",
+        "SSN": "29709120102216",
+        "Password": "password",
+        "UserTypeId": 6
+    },
+    {
+        "Name": "Teacher Two",
+        "Username": "t2",
+        "Email": "TeacherTwo@gmail.com",
+        "SSN": "29709120102226",
+        "Password": "password",
+        "UserTypeId": 6
+    },
+    {
+        "Name": "Teacher Three",
+        "Username": "t3",
+        "Email": "TeacherOne@gmail.com",
+        "SSN": "29709120102236",
+        "Password": "password",
+        "UserTypeId": 6
+    },
+    {
+        "Name": "Teacher Four",
+        "Username": "t4",
+        "Email": "TeacherFour@gmail.com",
+        "SSN": "29709120102246",
+        "Password": "password",
+        "UserTypeId": 6
+    },
+    {
+        "Name": "Teacher Five",
+        "Username": "t5",
+        "Email": "TeacherFive@gmail.com",
+        "SSN": "29709120102256",
+        "Password": "password",
+        "UserTypeId": 6
+    },
+    {
+        "Name": "Student Affairs",
+        "Username": "sa",
+        "Email": "StudentAffairs@gmail.com",
+        "SSN": "29709120102287",
+        "Password": "password",
+        "UserTypeId": 7
+    },
+    {
+        "Name": "Human Resources",
+        "Username": "hr",
+        "Email": "HumanResources@gmail.com",
+        "SSN": "29709120102288",
+        "Password": "password",
+        "UserTypeId": 8
+    }
+]

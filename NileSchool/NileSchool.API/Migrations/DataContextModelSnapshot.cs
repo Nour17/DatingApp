@@ -80,6 +80,26 @@ namespace NileSchool.API.Migrations
                     b.ToTable("Classes");
                 });
 
+            modelBuilder.Entity("NileSchool.API.Models.Department", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("Created");
+
+                    b.Property<DateTime>("LastUpdated");
+
+                    b.Property<string>("Name");
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Departments");
+                });
+
             modelBuilder.Entity("NileSchool.API.Models.Grade", b =>
                 {
                     b.Property<int>("Id")
@@ -134,6 +154,26 @@ namespace NileSchool.API.Migrations
                     b.HasIndex("ClassId");
 
                     b.ToTable("Students");
+                });
+
+            modelBuilder.Entity("NileSchool.API.Models.Teacher", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("DepartmentId");
+
+                    b.Property<string>("Position");
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DepartmentId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Teachers");
                 });
 
             modelBuilder.Entity("NileSchool.API.Models.User", b =>
@@ -196,6 +236,14 @@ namespace NileSchool.API.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("NileSchool.API.Models.Department", b =>
+                {
+                    b.HasOne("NileSchool.API.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("NileSchool.API.Models.Grade", b =>
                 {
                     b.HasOne("NileSchool.API.Models.AcademicYear", "AcademicYear")
@@ -214,6 +262,19 @@ namespace NileSchool.API.Migrations
                     b.HasOne("NileSchool.API.Models.Class", "Class")
                         .WithMany()
                         .HasForeignKey("ClassId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("NileSchool.API.Models.Teacher", b =>
+                {
+                    b.HasOne("NileSchool.API.Models.Department", "Department")
+                        .WithMany()
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("NileSchool.API.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

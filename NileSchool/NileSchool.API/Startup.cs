@@ -12,9 +12,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using NileSchool.API.Data;
+using NileSchool.API.Data.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using NileSchool.API.Data.Repositories;
 
 namespace NileSchool.API
 {
@@ -38,11 +40,15 @@ namespace NileSchool.API
             services.AddCors();
             services.AddTransient<Seed>();
             services.AddScoped<IAssistantPrincipalRepository, AssistantPrincipalRepository>();
-            services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IAcademicYearRepository, AcademicYearRepository>();
             services.AddScoped<IGradeRepository, GradeRepository>();
             services.AddScoped<IClassRepository, ClassRepository>();
             services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            services.AddScoped<IUserTypeRepository, UserTypeRepository>();
+            services.AddScoped<ITeacherRepository, TeacherRepository>();
+            services.AddScoped<ISubjectRepository, SubjectRebository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options => {
                     options.TokenValidationParameters = new TokenValidationParameters{
@@ -68,7 +74,7 @@ namespace NileSchool.API
                 // app.UseHsts();
             }
 
-            // seeder.SeedUserTypes();
+            // seeder.main();
             // app.UseHttpsRedirection();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseAuthentication();

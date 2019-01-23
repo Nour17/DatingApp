@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using NileSchool.API.Data;
+using NileSchool.API.Data.Interfaces;
 using NileSchool.API.Dtos;
 using NileSchool.API.Models;
 
@@ -17,36 +18,13 @@ namespace NileSchool.API.Controllers
     [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
-        private readonly IAuthRepository _repo;
+        private readonly IUserRepository _repo;
         private readonly IConfiguration _config;
 
-        public UsersController(IAuthRepository repo, IConfiguration config)
+        public UsersController(IUserRepository repo, IConfiguration config)
         {
             _repo = repo;
             _config = config;
-        }
-
-        [HttpPost("register")]
-        public async Task<IActionResult> MakeUser(UserForRegisterDto newUser){
-            
-            newUser.Username = newUser.Username.ToLower();
-
-            if(await _repo.UserExists(newUser.Username)){
-                return BadRequest("Username already exists");
-            }
-
-            // Make User from the incoming Dto 
-            var userToCreate = new User{
-                Name = newUser.Name,
-                Username = newUser.Username,
-                Email = newUser.Email,
-                SSN = newUser.SSN,
-                UserTypeId = newUser.UserType
-            };
-            
-            var createdUser = await _repo.MakeUser(userToCreate, newUser.Password);
-
-            return Ok("User Created Successfully");
         }
 
         [HttpPost("login")]
@@ -61,7 +39,7 @@ namespace NileSchool.API.Controllers
             var Claims = new[] {
                 new Claim(ClaimTypes.PrimarySid, userToLogin.Id.ToString()),
                 new Claim(ClaimTypes.Name, userToLogin.Name),
-                new Claim(ClaimTypes.Actor, userToLogin.UserTypeId.ToString())
+                new Claim(ClaimTypes.Role, userToLogin.UserTypeId.ToString())
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.GetSection("AppSettings:Token").Value));
